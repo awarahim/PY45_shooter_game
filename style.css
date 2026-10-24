@@ -1,0 +1,433 @@
+/* =========================================================
+   STUDENT TEMPLATE — style.css
+   Everything is styled for you EXCEPT the product cards.
+   Scroll to the "PRODUCT CARDS" block and fill in the rules.
+   ========================================================= */
+
+:root {
+  --bg: #0d0d0f;
+  --card: #1a1a1f;
+  --accent: #7cf0c8;
+  --accent2: #f0c87c;
+  --text: #e8e8ec;
+  --muted: #7a7a85;
+  --border: rgba(124, 240, 200, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* ============ NAV ============ */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ============ HERO ============ */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 5rem 3rem;
+}
+
+.hero-left {
+  width: 55%;
+}
+
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow-line {
+  display: inline-block;
+  width: 2rem;
+  height: 1px;
+  background: var(--accent);
+  margin-right: 0.6rem;
+  vertical-align: middle;
+}
+
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name .accent {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.hero-bio {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--accent2);
+}
+
+.hero-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  color: var(--accent);
+}
+
+/* ============ SECTION HEADINGS ============ */
+.section {
+  padding: 5rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+/* =====================================================================
+   ⭐ YOUR TASK: PRODUCT CARDS ⭐
+   Fill in each rule below. Hints tell you which properties to use.
+   Use the variables above for colours, e.g.  background: var(--card);
+   ===================================================================== */
+
+.products-grid {
+  /* TODO: display: grid; */
+  /* TODO: make 3 columns  →  grid-template-columns: repeat(3, 1fr); */
+  /* TODO: add a gap between cards, e.g. gap: 1.5rem; */
+}
+
+.product-card {
+  /* TODO: background colour (use var(--card)) */
+  /* TODO: 1px solid border (use var(--border)) */
+  /* TODO: padding inside the card, e.g. 1.5rem */
+}
+
+/* PSEUDO-CLASS: runs only when the mouse is over the card */
+.product-card:hover {
+  /* TODO: change border-color to var(--accent) */
+}
+
+/* PSEUDO-CLASS: targets only the FIRST card in the grid */
+.product-card:first-child {
+  /* TODO: set border-color to var(--accent2) so it stands out */
+}
+
+.product-image {
+  /* TODO: darker background (var(--bg)) + 1px border */
+  /* TODO: big font-size for the emoji, e.g. 3rem */
+  /* TODO: text-align: center; and some padding */
+  /* TODO: margin-bottom to separate it from the name */
+}
+
+.product-name {
+  /* TODO: display: block;  (so the span takes its own line) */
+  /* TODO: font-family: 'DM Mono', monospace; */
+  /* TODO: margin-bottom */
+}
+
+.product-desc {
+  /* TODO: display: block; */
+  /* TODO: smaller font-size + color: var(--muted) */
+  /* TODO: line-height for readability, e.g. 1.6 */
+  /* TODO: margin-bottom */
+}
+
+.product-bottom {
+  /* TODO: display: flex; */
+  /* TODO: align-items: center; */
+  /* TODO: justify-content: space-between;  (price left, button right) */
+}
+
+.product-price {
+  /* TODO: font-family: 'DM Mono', monospace; */
+  /* TODO: color: var(--accent); */
+}
+
+.register-btn {
+  /* TODO: background: var(--accent);  +  color: var(--bg); */
+  /* TODO: padding, e.g. 0.45rem 1.1rem */
+  /* TODO: text-decoration: none;  +  text-transform: uppercase; */
+}
+
+/* PSEUDO-CLASS: button hover */
+.register-btn:hover {
+  /* TODO: change background to var(--accent2) */
+}
+
+/* ============ ABOUT ============ */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.about p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about .accent {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.skill-tag {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.skill-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.stat-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+/* ============ REVIEWS ============ */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.review-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1.75rem;
+}
+
+.review-card:hover {
+  border-color: var(--accent);
+}
+
+.review-stars {
+  color: var(--accent2);
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 4rem 3rem 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.footer-heading {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  display: block;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.contact-item {
+  margin-bottom: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.contact-icon {
+  margin-right: 0.6rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.social-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+  margin-left: 1.25rem;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
